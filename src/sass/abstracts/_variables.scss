@@ -1,3 +1,50 @@
 /* ********* */
 /* @VARIABLES */
 /* ********* */
+
+// $social: (
+//     facebook: #3a3ab8,
+//     twitter: #24246f,
+//     instagram: #b41111,
+//     youtube: #d71111,
+//     linkedin: #030342,
+//   );
+
+
+//   .facebook {
+//   background-color: map-get($social, facebook);
+// }
+// .twitter {
+//   background-color: map-get($social, twitter);
+// }
+// .instagram {
+//   background-color: map-get($social, instagram);
+// }
+// .youtube {
+//   background-color: map-get($social, youtube);
+// }
+// .linkedin {
+//   background-color: map-get($social, linkedin);
+// }
+
+
+// @each $red,$color in $social {
+//     .#{$red}{
+//         background-color: $color;
+//         color: lighten($color, 10%);
+//     }
+// }
+
+
+
+$colores: (
+    azul: #2C5271,
+    azulClaro: #509A9D,
+    verdeAzulado: #70C197,
+    verdeClaro: #93DF9A,
+    verdeBlanco: #D5F2D3,
+  );
+
+
+
+  
