@@ -10,7 +10,6 @@
 //     linkedin: #030342,
 //   );
 
-
 //   .facebook {
 //   background-color: map-get($social, facebook);
 // }
@@ -27,6 +26,36 @@
 //   background-color: map-get($social, linkedin);
 // }
 
+// @each $red,$color in $social {
+//     .#{$red}{
+//         background-color: $color;
+//         color: lighten($color, 10%);
+//     }
+// }
+
+$colores: (
+  azul: #2c5271,
+  azulClaro: #509a9d,
+  verdeAzulado: #70c197,
+  verdeClaro: #93df9a,
+  verdeBlanco: #d5f2d3,
+);
+
+.azul {
+  background-color: map-get($colores, azul);
+}
+.azulClaro {
+  background-color: map-get($colores, azulClaro);
+}
+.verdeAzulado {
+  background-color: map-get($colores, verdeAzulado);
+}
+.verdeClaro {
+  background-color: map-get($colores, verdeClaro);
+}
+.verdeBlanco {
+  background-color: map-get($colores, verdeBlanco);
+}
 
 // @each $red,$color in $social {
 //     .#{$red}{
@@ -35,16 +64,9 @@
 //     }
 // }
 
-
-
-$colores: (
-    azul: #2C5271,
-    azulClaro: #509A9D,
-    verdeAzulado: #70C197,
-    verdeClaro: #93DF9A,
-    verdeBlanco: #D5F2D3,
-  );
-
-
-
-  
+@each $pildora, $color in $colores {
+  .#{$pildora} {
+    background-color: $color;
+    
+  }
+}
